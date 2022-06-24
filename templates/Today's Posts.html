@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Today's Posts</title>
+        <link href="/static/style.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <script src="https://kit.fontawesome.com/35e2634067.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/Home">
+                <img src="https://preview.redd.it/cqwn4k37ic731.png?auto=webp&s=0e25ec545efa6476d895bb0b75afe2f14292ca71" alt="logo" class="logo">
+            </a>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/Your Anarchy Score">Your Anarchy Score</a></li>
+                    <li><a href="/The Memes">The Memes</a></li>
+                    <li><a href="/Today's Posts">Today's Posts</a></li>
+                    <li><a href="/About">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="top-posts">
+            {% for i in range(10) %}
+                {% if urls[i].endswith("g") %}
+                    <div class="post-card">
+                        <a href="{{ urls[i] }}">
+                            <img src="{{ urls[i] }}" alt="image" class="card">
+                        </a>
+                        <div class="post-info">
+                            <a href="{{ permalinks[i] }}">
+                                <h2>{{ titles[i] }}</h2>
+                            </a>
+                            <div class="upvotes">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>{{ upvotes[i] }}</p>
+                            </div>
+                            <p>{{ comments[i] }} comments</p>
+                        </div>
+                    </div>
+                {% elif urls[i].endswith("/") %}
+                    <div class="post-card">
+                        <a href="{{ urls[i] }}">
+                            <img src="https://icon-library.com/images/reddit-icon-vector/reddit-icon-vector-5.jpg" alt="image" class="card">
+                        </a>
+                        <div class="post-info">
+                            <a href="{{ permalinks.permalink5 }}">
+                                <h2>{{ titles[i] }}</h2>
+                            </a>
+                            <div class="upvotes">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>{{ upvotes[i] }}</p>
+                            </div>
+                            <p>{{ comments[i] }} comments</p>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="post-card">
+                        <a href="{{ urls[i]}}">
+                            <video controls poster="https://cdn1.iconfinder.com/data/icons/ios-edge-line-12/25/Video-Play-512.png" class="card">
+                                <source src="{{ urls[i] }}" />
+                            </video>
+                            </a>
+                            <div class="post-info">
+                                <a href="{{ permalinks[i] }}">
+                                <h2>{{ titles[i] }}</h2>
+                            </a>
+                            <div class="upvotes">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <p>{{ upvotes[i] }}</p>
+                            </div>
+                            <p>{{ comments[i] }} comments</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            <footer>
+                <div class="footer-content">
+                    <a href="https://www.reddit.com/r/AnarchyChess/">
+                        <h3>r/AnarchyChess</h3>
+                    </a>
+                    <p>r/AnarchyChess is a Chess-circlejerk humor subreddit which
+                        I have been an active member of for over 2 years. This is my first ever website
+                        which I created for my Final Project for Harvard's CS50. For more info, check the about page.
+                        You can join the subreddit, its discord server and connect with me on
+                        Github and Linkedin from below.
+                    </p>
+                    <ul class="socials">
+                        <li>
+                            <a href="https://www.reddit.com/r/AnarchyChess/"><i class="fa-brands fa-reddit"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/P3BnpqWewB/"><i class="fa-brands fa-discord"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/arnab-saha-98b392241"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Arnab-Saha-7"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>Made by Arnab Saha</p>
+                </div>
+            </footer>
+            <script>
+                const toggleButton = document.getElementsByClassName('toggle-btn')[0];
+                const navlinks = document.getElementsByClassName('nav')[0];
+
+                toggleButton.addEventListener('click', () => {
+                    navlinks.classList.toggle('active')
+                })
+            </script>
+    </body>
+</html>

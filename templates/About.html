@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <link href="/static/style.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <script src="https://kit.fontawesome.com/35e2634067.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="/Home">
+                <img src="https://preview.redd.it/cqwn4k37ic731.png?auto=webp&s=0e25ec545efa6476d895bb0b75afe2f14292ca71" alt="logo" class="logo">
+            </a>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/Your Anarchy Score">Your Anarchy Score</a></li>
+                    <li><a href="/The Memes">The Memes</a></li>
+                    <li><a href="/Today's Posts">Today's Posts</a></li>
+                    <li><a href="/About">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="about-container">
+            <div class="about">
+                <h1>About r/AnarchyChess</h1>
+                <p>r/AnarchyChess is a chess circle-jerk subreddit. Chess is generally not a
+                    very funny game and for most people, it is seen as a game that is
+                    very serious and which requires a high level of intellect to be good at.
+                    Though it is true to some extent, it does not stop people from finding
+                    humor in what they love, and Chess is no exception. r/AnarchyChess
+                    was created as the sister subreddit of r/Chess, the main and the biggest
+                    subreddit for all things Chess on Reddit. It is the opposite of r/Chess in nature.
+                    Where r/Chess is dedicated towards a more serious discussion of various Chess
+                    related topics, r/AnarchyChess brings the balance with lighthearted posts,
+                    often parodying the serious posts of r/Chess. Though it might seem like
+                    that these two subreddits are at the opposite ends of a spectrum, and even
+                    frequent trash talking can be seen by both parties towards each other,
+                    the main population of both subreddit is largely the same. Some people have
+                    compared them as r/Chess being the office where one would behave in a more professional manner
+                    and r/AnarchyChess where one would act as if they are
+                    in a casual setting with their friends. The memes and jokes of r/AnarchyChess may
+                    sometimes (read often times) be seen as absurd, stupid and low effort; and
+                    often times one would even be correct for such assumption, one of the unique
+                    qualities of r/AnarchyChess, like most other circle-jerk subreddits is the usage
+                    of so called meta-humor and self deprecation. In other words, the low effort posts
+                    a part of the joke which are used ironically.
+                </p>
+            </div>
+            <div class="about">
+                <h1>About Me</h1>
+                <p>
+                    This website was created for the finsl project for CS50 of Harvard University.
+                    I have no formal educaton in CS/STEM and CS50 was the first CS/programming course
+                    I have ever taken. I started CS50 on 28th March, 2022 and a little after 12 weeks, I completed
+                    this project. I was a bit lost at first about what to make for this final assignment as there
+                    are no concrete instructions given and I had the full freedom to make whatever I wanted. As someone with no
+                    experience, such freedom was hard to deal with at first as for the problem sets prior to this
+                    I knew what the problem was and what exactly was my task. I had to make something more complex
+                    than anything that I have ever done for the psets. At the same time I wanted to build something
+                    unique while making sure I enjoy the process throughout. I remembered some advice on the CS50 website
+                    for the final project, it was something like 'change the world or make an impact on your community...'
+                    I got this idea from the last few words. I like playing Chess. I have spent (some would say wasted) countless
+                    hours playing Chess online and I actively take part in Reddit Chess communities, whether it be some
+                    serious discussion or simply shit-posting. This was my community! I realized r/AnarchyChess had no
+                    website of its own (not that most subreddits have or need their own website). So I wanted to make one for them,
+                    for us! I also didn't like how the wiki for the subreddit written, especially the memes part. There were
+                    no explanations of the memes, just their origin links. This does not a cause any real problem
+                    because it is such a niche place, that most people would understand the memes on their own or with some
+                    contextual help. But I still felt the need to make a wiki for the memes, giving a brief description
+                    for all the major memes one would encounter on the subreddit. But getting the idea was just the beginning,
+                    it is merely the first step. It was very hard to write the actual code. I was mainly struggling with CSS
+                    as there were not many front end specific psets in CS50 and my knowledge of CSS did not exceed beyond
+                    the absolute basics. I had to watch many YouTube videos to get the project started. Many of the components
+                    of this website is not my original work (like the nav-bar, accordions in The Memes). However I did try
+                    to understand every line of code that I was taking from internet. At the end I would say I certainly have
+                    a far better understanding of CSS than what I started with. I created Today's Posts and made
+                    some major changes to all the pages design wise without any external help. But even then it is mostly static.
+                    I needed to make something more dynamic. One reason is otherwise this would be just tedious, but not complex.
+                    Certainly not more complex than the psets I have done before. Another reason is that, it would simply be
+                    no fun for the visitors. I had some ideas but soon realized most of them were far out of reach of my skillset. For example,
+                    I wanted to create a playable Chess AI that follows the meme rules of AnarchyChess (en passant is always
+                    taken, will play the Bongcloud, can't play the London system etc). But it turns out making just a normal
+                    AI that plays Chess is just too difficult and requires far more programming and mathematical knowledge than
+                    what I currently have, let alone with meme rules. Then the idea of giving the players their Anarchy Score came from
+                    two Reddit bots. One was the almighty PetrosianBot that writes the Petrosian copypasta everytime some certain
+                    keywords are typed. The other was the ProfanityCounterBot, popular in mainstream Reddit, which upon called,
+                    goes through the comments of an user and writes the number of times that user has used the selected bad words.
+                    I took this idea and wanted to combine them in a way that would be fun for the AnarchyChess users. I would write
+                    a program in python, which would go through the comments of an user, count the number of comments and words iterated
+                    and give back the number of times the user has used certain meme words and also give a sum of them as the score.
+                    I used the PRAW library for that which made my job really easy and smooth. Another feature I wanted to implement
+                    was the Today's Posts page. A subreddit does not need a website because all the fun things are happening in the
+                    subreddit itself. However if a subreddit does have a website, it should have a page showing the hot posts of
+                    the day. This is something I have seen for almost every discord server of various subreddits. So with the help of PRAW again
+                    I implemented this idea, It would show the picture of the post (if it is a picture, which most posts are),
+                    the number of comments and the number of upvotes for 10 of the hottest posts of the day, excluding the sticky
+                    posts. This would refresh autometically each time the page is visited. The whole backend is written in Flask,
+                    which CS50 teaches. Lastly some words about the color scheme for the whole website. This was a tribute to the
+                    subreddit (which has red as it's theme) and Harvard (crimson). I used to two shades of dark red and pink as the color
+                    for the website, with black and dark grey for the footer and few other things. I have tried to make the website
+                    responsive but I'm unsure abput how well I have done it. I feel like the responsiveness could be improved but I don't really
+                    know how. This took me about 3 weeks to make, spending 2-3 hours everyday
+                    (I have my own studies as well so can't invest more time). I have surely learned a lot which I am certain will be helpful
+                    for my future endeavors. I would like to thank CS50 and their stuffs for making such a course freely
+                    avilable for the public, the YouTubers putting helpful videos (especially Web Dev Simplified and
+                    Kevin Powell whose videos helped a ton for learning CSS) and of course, the awesome people of
+                    r/AnarchyChess for being such an awesome community.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <a href="https://www.reddit.com/r/AnarchyChess/">
+                    <h3>r/AnarchyChess</h3>
+                </a>
+                <p>r/AnarchyChess is a Chess-circlejerk humor subreddit which
+                    I have been an active member of for over 2 years. This is my first ever website
+                    which I created for my Final Project for Harvard's CS50. For more info, check the about page.
+                    You can join the subreddit, its discord server and connect with me on
+                    Github and Linkedin from below.
+                </p>
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.reddit.com/r/AnarchyChess/"><i class="fa-brands fa-reddit"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/P3BnpqWewB/"><i class="fa-brands fa-discord"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/arnab-saha-98b392241"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Arnab-Saha-7"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Made by Arnab Saha</p>
+            </div>
+        </footer>
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-btn')[0];
+            const navlinks = document.getElementsByClassName('nav')[0];
+
+            toggleButton.addEventListener('click', () => {
+                navlinks.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
