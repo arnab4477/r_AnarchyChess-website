@@ -1,5 +1,4 @@
-import os
-from flask import Flask, flash, redirect, render_template, request
+from flask import Flask, render_template, request
 from helpers import apology, get_anarchy_score, get_posts
 
 # Configure application
