@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
 
 * {
     box-sizing: border-box;
@@ -206,7 +205,6 @@ header {
     font-weight: bold;
     font-size: 32px;
     color: rgb(255, 253, 253);
-    font-family: 'Bebas Neue', cursive;
 }
 
 @media (max-width: 500px) {
