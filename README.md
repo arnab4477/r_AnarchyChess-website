@@ -1,5 +1,7 @@
 # Website for r/AnarchyChess
 
+# (IMPORTANT! The code for this project contains very HIGH SECURITY VUNARABILITIES. I have put the apikey, user_ageent, client_id and the password for the mock Reddit account I created for this project in the code. THIS IS NOT OK! I should have used enviromental variables, but I didn't. It was totally my mistake. NEVER HARD CODE ANY SENSITIVE INFORMATION IN YOUR CODE, even if you don't share it with anyone else)
+
 ##### Overview:
 
 This is a web app for the popular subreddit r/AnarchyChess. This website was built using HTML5, CSS3 and Vanilla JS in the front end and Python (Flask) in the backend. PRAW library has been used to work with the Reddit API. The website has total 7 pages which the users can access. The main 6 pages are "Home", "Your Anarchy Score" (YAS), "Score" (users cannot manually access this page by themselves, but are redirected to after a successful entry of valid username in the previous page), "The Memes", "Today's Posts" and "About". There is also an "Apology" page which users will be redirected to uf there is an unsuccessful entry of valid username. All the pages have the same header and footer. The header contains links to the other pages of the website. The footer contains the links to the subreddit, its discord server and my socials. This project has two python files. app.py and helpers.py. More about all of these below.
