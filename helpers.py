@@ -1,6 +1,16 @@
 from flask import redirect, render_template, request, session
 import praw
 
+# Hey, future me here (1st December, 2022)! Looks like I have done a big oopsie :0
+# I have put the apikey, user_agent, client_id AND the password for the mock Reddit account I created for this project
+# in the code. How could I?! Well, I started on this project right after finishing the last lecture of CS50, equipped only
+# with the knowledge I gained there. Back then I did not even know the concept of enviromental varibles, else I would have
+# used os variables instead. Needless to say I have learned my lesson, as someone logged into this Reddit account and started
+# posting crypto spam. Which ended up all my accounts being perma banned from Reddit. I did think about privating this repo
+# as this may not look well to the eyes of a potential employer. But I also put a lot of effort into this silly website and
+# really like what I created, I wouldn't want to take it down! It's my first project after all and who doesn't make mistakes?
+# So this stays up. Anyway, I need to stop now, lot of rambling lol. Bye!!
+
 reddit = praw.Reddit(
     client_id = '6VasjNBqlU1WqfxRe9inoQ',
     client_secret = 'gEpAtnfaG8dr_lX37g2EmC5rh4luLQ',
