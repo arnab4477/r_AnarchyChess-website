@@ -1,6 +1,7 @@
 # Website for r/AnarchyChess
 
-# (IMPORTANT! The code for this project contains very HIGH SECURITY VUNARABILITIES. I have put the apikey, user_ageent, client_id and the password for the mock Reddit account I created for this project in the code. THIS IS NOT OK! I should have used enviromental variables, but I didn't. It was totally my mistake. NEVER HARD CODE ANY SENSITIVE INFORMATION IN YOUR CODE, even if you don't share it with anyone else)
+## Web archive link as Heroku stopped their frre plan on 28th November, 2022
+https://web.archive.org/web/20221128194624/https://anarchychess.herokuapp.com/
 
 ##### Overview:
 
