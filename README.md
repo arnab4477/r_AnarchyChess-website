@@ -1,7 +1,7 @@
 # Website for r/AnarchyChess
 
-## Web archive link as Heroku stopped their frre plan on 28th November, 2022
-https://web.archive.org/web/20221128194624/https://anarchychess.herokuapp.com/
+## Web archive link as Heroku stopped their free service on 28th November, 2022
+https://web.archive.org/web/20221128194646/https://anarchychess.herokuapp.com/Home
 
 ##### Overview:
 
